@@ -1,0 +1,22 @@
+{
+  "name": "yida",
+  "version": "1.0.0",
+  "description": "* ### 命名规范\r   - feature/日期-需求名称\r * ### 拉取规范\r   - 一个需求一个分支，如果需求太大要自己细分需求，一个需求的开发周期尽量不要超过一周\r   - 如果存在父需求，需要拉取父需求对应分支的最新代码，根据最新代码拉出一个新的分支\r   - 如果不存在父需求，则获取最新的master代码，根据master拉出一个新的分支",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/824772915/YIDA-Campus.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/824772915/YIDA-Campus/issues"
+  },
+  "homepage": "https://github.com/824772915/YIDA-Campus#readme",
+  "dependencies": {
+    "flyio": "^0.6.14"
+  }
+}

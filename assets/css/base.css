@@ -1,0 +1,83 @@
+@import "./normalize.css";
+/*:root -> 获取根元素html*/
+/*自身项目的基础样式 */
+:root {
+  --color-text: #666;
+  --color-high-text: #C6191E;
+  --color-tint: #C6191E;
+  --color-background: #fff;
+  --font-size: 14px;
+  --line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  user-select: none; /* 禁止用户鼠标在页面上选中文字/图片等 */
+  -webkit-tap-highlight-color: transparent; /* webkit是苹果浏览器引擎，tap点击，highlight背景高亮，color颜色，颜色用数值调节 */
+  background: var(--color-background);
+  color: var(--color-text);
+  /* rem vw/vh */
+  width: 100vw;
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+
+.clear-fix::after {
+  clear: both;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.clear-fix {
+  zoom: 1;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+/* 适配苹果屏幕底部刘海 */
+page {  
+  --safe-area-inset-top: 0px;  
+  --safe-area-inset-right: 0px;  
+  --safe-area-inset-bottom: 0px;  
+  --safe-area-inset-left: 0px;  
+
+}  
+
+@supports (top: constant(safe-area-inset-top)) {  
+  page {  
+      --safe-area-inset-top: constant(safe-area-inset-top);  
+      --safe-area-inset-right: constant(safe-area-inset-right);  
+      --safe-area-inset-bottom: constant(safe-area-inset-bottom);  
+      --safe-area-inset-left: constant(safe-area-inset-left);  
+  }  
+
+}  
+
+@supports (top: env(safe-area-inset-top)) {  
+  page {  
+      --safe-area-inset-top: env(safe-area-inset-top);  
+      --safe-area-inset-right: env(safe-area-inset-right);  
+      --safe-area-inset-bottom: env(safe-area-inset-bottom);  
+      --safe-area-inset-left: env(safe-area-inset-left);  
+  }  
+}  

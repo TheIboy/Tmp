@@ -1,0 +1,195 @@
+{
+	"pages": [
+		{
+      "path": "pages/tabBar/index/index"
+		},
+		{
+      "path": "pages/web-view/index"
+		},
+		{
+      "path": "pages/tabBar/course/course",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "课程表"
+			}
+		},
+		{
+      "path": "pages/tabBar/profile/index",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+      "path" : "pages/login/login",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/tabBar/profile/innerRouter/aboutus/aboutus",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "关于我们"
+			}
+		},
+		{
+			"path": "pages/tabBar/profile/innerRouter/bulletin/bulletin",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "系统公告"
+			}
+		},
+		{
+			"path": "pages/tabBar/profile/innerRouter/feedback/feedback",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "反馈建议"
+			}
+		},
+		{
+			"path": "pages/tabBar/profile/innerRouter/help/help",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "帮助中心"
+			}
+		},
+		{
+			"path": "pages/tabBar/profile/innerRouter/mycard/mycard",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "学籍信息"
+			}
+		},
+		{
+			"path" : "components/indexComponents/navigationCart"
+		},
+		{
+			"path" : "components/indexComponents/navgationItem"
+		},
+		{
+			"path" : "pages/tabBar/index/exam/exam",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "考试安排"
+			}
+		},
+		{
+			"path" : "pages/tabBar/index/inform/inform",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "校园通知",
+				"enablePullDownRefresh":true
+			}
+		},
+		{
+			"path" : "pages/tabBar/index/inform/content/content",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "校园通知"
+			}
+		},
+		{
+			"path" : "pages/tabBar/index/inform/search/search",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "搜索结果"
+			}
+		},
+		{
+			"path" : "pages/tabBar/index/score/score",
+			"style" :                                                                                    
+			{
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "成绩查询"
+			}
+		},
+		{
+			"path" : "pages/tabBar/index/volunteer/volunteer",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "义工活动"
+			}
+		},{
+			"path" : "pages/tabBar/index/volunteer/childVolunteer/servelogVolunteer",
+			"style" :                                                                                    
+			{
+				"onReachBottomDistance":10
+			}
+		},
+		{
+			"path" : "pages/tabBar/index/exam/examcard/examcard"
+		},
+		{
+			"path" : "pages/tabBar/index/volunteer/loginVolunteer/loginVolunteer",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "义工登录"
+			}
+			
+		},
+		{
+			"path" : "pages/tabBar/index/secondCredit/secondCredit",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "学分查询"
+			}
+		},
+		{
+			"path" : "pages/tabBar/index/developmentPlan/developmentPlan",
+			"style" :                                                                                    
+			{
+					"navigationBarTitleText": "开发计划",
+					"enablePullDownRefresh": false,
+					"onReachBottomDistance":1
+			}
+		},
+		{
+			"path" : "pages/tabBar/index/activeForm/index",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "提现活动"
+			}
+		}
+		,{
+				"path" : "pages/tabBar/course/cpCourse/cpCourse",
+				"style" :                                                                                    
+				{
+						"navigationBarTitleText": "管理cp列表",
+						"enablePullDownRefresh": false
+				}
+				
+			}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "YIDA微校园",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {	
+		"color": "#7A7E83",
+		"selectedColor": "#C6191E",
+		"borderStyle": "black",
+		"backgroundColor": "#FFFFFF",
+		"list": [{
+				"pagePath": "pages/tabBar/index/index",
+				"iconPath": "static/home_tarbar_icon_1.png",
+				"selectedIconPath": "static/home_tarbar_icon_2.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/tabBar/course/course",
+				"iconPath": "static/schedule_tarbar_icon_1.png",
+				"selectedIconPath": "static/schedule_tarbar_icon_2.png",
+				"text": "课程表"
+			}, {
+				"pagePath": "pages/tabBar/profile/index",
+				"iconPath": "static/my_tarbar_icon_1.png",
+				"selectedIconPath": "static/my_tarbar_icon_2.png",
+				"text": "我的"
+			}
+		]
+	}
+}
